@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: hat;
+    src: url(https://fonts.google.com/specimen/Red+Hat+Text);
+}
+.container{
+    background-color: #211D2E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#midsec{
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 3fr 1fr;
+    top: 104px;
+    width: 131vh;
+    height: 52%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+.container p{
+    color: #FFFEFF;
+    font-family: hat;
+    font-weight: 700;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    position: relative;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    align-items: center;
+    justify-content: center;
+}
+
+.container span{
+    font-family:hat;
+    color: hsl(237, 18%, 59%);
+}
+#stars{
+    margin-left: 5%;
+    max-width: 73%;
+}
+#hills{
+    max-width: 100%;
+    height: 34vh;
+    margin-top: 5%;
+}
+
+.top-box{
+    width: 100%;
+    display: grid;
+    background-color: #34364F;
+    border-radius: 11px;
+    align-items: center;
+    justify-content: center;
+    font-size: 21vh;
+    color: #FA5D86 !important;
+    letter-spacing: 3px;
+    transition: transform 0.6s;
+}
+.flip {
+    transform: rotateX(40deg);
+  }
+.name{
+    display: grid; 
+    align-items: center;
+    justify-content: center; 
+    font-size: 20px;
+    font-weight: 600; 
+    letter-spacing: 11px;
+}
+
+@media only screen and (max-width: 600px) {
+    #hills{
+        margin-top: 86%;
+    }
+    #stars{
+        width: 88%;
+        position: absolute;
+        top: -4%;
+    }
+    .top-box{
+        width: 98%;
+        height: 95%;
+        font-size: 44px !important;
+    }
+    #midsec{
+        width: 68vh;
+        gap: 5px;
+        top: 60px;
+        grid-template-rows:1fr 1fr 1fr;
+    }
+   .name{
+    font-size: 14px;
+    letter-spacing: 3px;
+    align-content: baseline;
+   }
+   #midsec p{
+    font-size: 16px;
+    letter-spacing: 1px;
+   }
+}
+
